@@ -96,6 +96,7 @@ input, select, textarea {
 
 	body {
 		background: #1b1f22;
+		/* background: #000000; */
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -109,7 +110,7 @@ input, select, textarea {
 			transition: none !important;
 		}
 
-/* Type */
+/* TYPE */
 
 	html {
 		font-size: 16pt;
@@ -147,6 +148,42 @@ input, select, textarea {
 		line-height: 1.65;
 	}
 
+	/*TO CENTER TEXT IN THE MIDDLE OF THE PAGE*/
+
+	.center {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	color: #ffffff;
+	font-family: "Source Sans Pro", sans-serif;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 1.75rem;
+	letter-spacing: 1rem;
+	line-height: 1.65;
+	}
+
+	/* END */
+
+	/*TO POSITION TEXT AT THE BOTTOM OF THE PAGE*/
+
+	.bottom {
+	position: absolute;
+	left: 50%;
+	top: 92.5%;
+	transform: translate(-50%, -50%);
+	color: #ffffff;
+	font-family: "Source Sans Pro", sans-serif;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 0.6rem;
+	letter-spacing: 0.2rem;
+	line-height: 1.65;
+	}
+
+	/* END */
+
 	a {
 		-moz-transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out, border-bottom-color 0.4s ease-in-out;
 		-webkit-transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out, border-bottom-color 0.4s ease-in-out;
@@ -156,12 +193,29 @@ input, select, textarea {
 		border-color: #ffffff;
 		/* background-color: #000000; */
 		text-decoration: none;
-		color: #ffffff;
+		color: #FFF9;
 		font-weight: 600;
+		border-bottom-color: #FFF3;
 	}
 
 		a:hover {
-			border-bottom-color: transparent;
+			color: #FFFFFF;
+			border-bottom-color: #FFF9;
+		}
+
+		.index {
+			-moz-transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out, border-bottom-color 0.4s ease-in-out;
+			-webkit-transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out, border-bottom-color 0.4s ease-in-out;
+			-ms-transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out, border-bottom-color 0.4s ease-in-out;
+			transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out, border-bottom-color 0.4s ease-in-out;
+			border-bottom: none;
+			text-decoration: none;
+			color: #FFF9;
+			font-weight: 600;
+		}
+
+			.index:hover {
+				color: #FFFFFF;
 		}
 
 	strong, b {
@@ -197,6 +251,7 @@ input, select, textarea {
 			width: -webkit-max-content;
 			width: -ms-max-content;
 			width: max-content;
+			padding-top: 0.7rem;
 			/* LINE DELETED: padding-bottom: 0.5rem; */
 			/* LINE DELETED: margin: 0 0 2rem 0; */
 		}
@@ -205,7 +260,7 @@ input, select, textarea {
 		font-size: 2.25rem;
 		line-height: 1.3;
 		letter-spacing: 0.5rem;
-/* ADDED LINES */
+		/* ADDED LINES */
 		border-bottom: solid 1px #ffffff;
 		padding-bottom: 0.5rem;
 		margin: 0 0 2rem 0; /* Added lines end here */
@@ -215,7 +270,7 @@ input, select, textarea {
 		font-size: 1.5rem;
 		line-height: 1.4;
 		letter-spacing: 0.5rem;
-/* ADDED LINES */
+		/* ADDED LINES */
 		border-bottom: solid 1px #ffffff;
 		padding-bottom: 0.5rem;
 		margin: 0 0 2rem 0; /* Added lines end here */
@@ -223,7 +278,7 @@ input, select, textarea {
 
 	h3 {
 		font-size: 1rem;
-/* ADDED LINES */
+		/* ADDED LINES */
 		border-bottom: solid 1px #ffffff;
 		margin: 0 0 0.5rem 0; /* Added lines end here */
 	}
@@ -1123,7 +1178,7 @@ input, select, textarea {
 		line-height: calc(2.75rem - 2px);
 	}
 
-/* BG */
+/* BACKGROUND */
 
 	#bg {
 		-moz-transform: scale(1.0);
@@ -1183,6 +1238,59 @@ input, select, textarea {
 			background-repeat: no-repeat;
 			z-index: 1;
 		}
+
+		/* BG ENDS HERE */
+
+		/* INDEX BACKGROUND */
+
+			#indexbg {
+				-moz-transform: scale(1.0);
+				-webkit-transform: scale(1.0);
+				-ms-transform: scale(1.0);
+				transform: scale(1.0);
+				-webkit-backface-visibility: hidden;
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100vh;
+				/* z-index: 1; */
+			}
+
+				#indexbg:before, #indexbg:after {
+					content: '';
+					display: block;
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+				}
+
+				/* #bg:before {
+					background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
+					background-size: auto,
+ 256px 256px;
+					background-position: center,
+ center;
+					background-repeat: no-repeat,
+ repeat;
+					z-index: 2;
+				} */
+
+				#indexbg:after {
+					-moz-transform: scale(1.125);
+					-webkit-transform: scale(1.125);
+					-ms-transform: scale(1.125);
+					transform: scale(1.125);
+					background-image: url("../../images/DakarOxy.png");
+					background-position: center;
+					/* background-size: cover; */
+					background-repeat: no-repeat;
+					/* z-index: 1; */
+				}
+
+				/* INDEX BG ENDS HERE */
 
 		body.is-article-visible #bg:after {
 			-moz-transform: scale(1.0825);
