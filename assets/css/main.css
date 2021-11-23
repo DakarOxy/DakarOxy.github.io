@@ -186,15 +186,15 @@ input, select, textarea {
 	/*TO POSITION TEXT IN THE UPPER RIGHT CORNER*/
 	.upperrightcorner {
 	position: absolute;
-	left: 97.5%;
-	top: 4%;
+	left: 95%;
+	top: 5%;
 	transform: translate(-50%, -50%);
 	color: #ffffff;
 	font-family: "Source Sans Pro", sans-serif;
 	text-transform: uppercase;
 	color: #FFF9;
 	font-weight: 600;
-	font-size: 1.35rem;
+	font-size: 1.8rem;
 	letter-spacing: 0.5rem;
 	line-height: 1rem;
 	}
@@ -250,10 +250,10 @@ input, select, textarea {
 	}
 
 	.headertype1 {
-		font-size: 1.2rem;
+		font-size: 1.6rem;
 		color: #FFFFFF;
 		font-weight: 300;
-		letter-spacing: 0.5rem;
+		letter-spacing: 0.7rem;
 		text-transform: uppercase;
 	}
 
@@ -1281,10 +1281,10 @@ input, select, textarea {
 			-webkit-transform: scale(1.125);
 			-ms-transform: scale(1.125);
 			transform: scale(1.125);
-			-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out;
-			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
-			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
-			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
+			-moz-transition: -moz-transform 1.325s ease-in-out, -moz-filter 1.325s ease-in-out;
+			-webkit-transition: -webkit-transform 1.325s ease-in-out, -webkit-filter 1.325s ease-in-out;
+			-ms-transition: -ms-transform 1.325s ease-in-out, -ms-filter 1.325s ease-in-out;
+			transition: transform 1.325s ease-in-out, filter 1.325s ease-in-out;
 			background-image: url("../../images/bgDKROXY.jpg");
 			background-position: center;
 			background-size: cover;
