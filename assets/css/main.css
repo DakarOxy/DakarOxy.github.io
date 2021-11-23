@@ -72,7 +72,7 @@ input, select, textarea {
 	appearance: none;
 }
 
-/* Basic */
+/* BASIC */
 
 	@-ms-viewport {
 		width: device-width;
@@ -109,6 +109,9 @@ input, select, textarea {
 			-ms-transition: none !important;
 			transition: none !important;
 		}
+
+/* END OF BASIC */
+
 
 /* TYPE */
 
@@ -149,7 +152,6 @@ input, select, textarea {
 	}
 
 	/*TO CENTER TEXT IN THE MIDDLE OF THE PAGE*/
-
 	.center {
 	position: absolute;
 	left: 50%;
@@ -163,11 +165,9 @@ input, select, textarea {
 	letter-spacing: 1rem;
 	line-height: 1.65;
 	}
-
-	/* END */
+	/* END OF CENTERING */
 
 	/*TO POSITION TEXT AT THE BOTTOM OF THE PAGE*/
-
 	.bottom {
 	position: absolute;
 	left: 50%;
@@ -181,15 +181,36 @@ input, select, textarea {
 	letter-spacing: 0.2rem;
 	line-height: 1.65;
 	}
+	/* END OF BOTTOM POSITIONING */
 
-	/* END */
+	/*TO POSITION TEXT IN THE UPPER RIGHT CORNER*/
+	.upperrightcorner {
+	position: absolute;
+	left: 97.5%;
+	top: 4%;
+	transform: translate(-50%, -50%);
+	color: #ffffff;
+	font-family: "Source Sans Pro", sans-serif;
+	text-transform: uppercase;
+	color: #FFF9;
+	font-weight: 600;
+	font-size: 1.35rem;
+	letter-spacing: 0.5rem;
+	line-height: 1rem;
+	}
+
+	.upperrightcorner:hover {
+		color: #FFFFFF;
+	}
+
+	/* END OF UPPERRIGHTCORNER */
 
 	a {
 		-moz-transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out, border-bottom-color 0.4s ease-in-out;
 		-webkit-transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out, border-bottom-color 0.4s ease-in-out;
 		-ms-transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out, border-bottom-color 0.4s ease-in-out;
 		transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out, border-bottom-color 0.4s ease-in-out;
-		border-bottom: dotted 3px rgba(255, 255, 255, 0.5);
+		border-bottom: /*dotted */ 3px rgba(255, 255, 255, 0.5);
 		border-color: #ffffff;
 		/* background-color: #000000; */
 		text-decoration: none;
@@ -203,6 +224,7 @@ input, select, textarea {
 			border-bottom-color: #FFF9;
 		}
 
+/* LINKS FOR INDEX */
 		.index {
 			-moz-transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out, border-bottom-color 0.4s ease-in-out;
 			-webkit-transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out, border-bottom-color 0.4s ease-in-out;
@@ -210,6 +232,7 @@ input, select, textarea {
 			transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out, border-bottom-color 0.4s ease-in-out;
 			border-bottom: none;
 			text-decoration: none;
+			font-size: 2rem;
 			color: #FFF9;
 			font-weight: 600;
 		}
@@ -217,6 +240,34 @@ input, select, textarea {
 			.index:hover {
 				color: #FFFFFF;
 		}
+/* END OF LINKS FOR INDEX */
+
+
+	.indextype {
+		font-size: 2rem;
+		color: #FFF9;
+		font-weight: 300;
+	}
+
+	.headertype1 {
+		font-size: 1.2rem;
+		color: #FFFFFF;
+		font-weight: 300;
+		letter-spacing: 0.5rem;
+		text-transform: uppercase;
+	}
+
+	.headertype2 {
+		font-size: .8rem;
+		color: #FFFFFF;
+		font-weight: 300;
+		letter-spacing: 0.5rem;
+		text-transform: uppercase;
+	}
+
+	.dotted {
+		border-bottom: dotted;
+	}
 
 	strong, b {
 		color: #ffffff;
@@ -295,6 +346,8 @@ input, select, textarea {
 		font-size: 0.6rem;
 	}
 
+
+/* OTHER MEDIA */
 	@media screen and (max-width: 736px) {
 
 		h1 {
@@ -372,9 +425,9 @@ input, select, textarea {
 		.align-justify {
 			text-align: justify;
 		}
+/* END OF OTHER MEDIA */
 
-/* Form */
-
+/* FORM */
 	form {
 		margin: 0 0 2rem 0;
 	}
@@ -649,8 +702,9 @@ input, select, textarea {
 		color: rgba(255, 255, 255, 0.5) !important;
 		opacity: 1.0;
 	}
+/* END OF FORM */
 
-/* Box */
+/* BOX */
 
 	.box {
 		border-radius: 4px;
@@ -670,8 +724,9 @@ input, select, textarea {
 			border-radius: 0;
 			padding: 0;
 		}
+/* END OF BOX */
 
-/* Icon */
+/* ICON */
 
 	.icon {
 		text-decoration: none;
@@ -707,9 +762,9 @@ input, select, textarea {
 		.icon.brands:before {
 			font-family: 'Font Awesome 5 Brands';
 		}
+/* END OF ICON */
 
-/* Image */
-
+/* IMAGE */
 	.image {
 		border-radius: 4px;
 		border: 0;
@@ -792,9 +847,9 @@ input, select, textarea {
 			}
 
 		}
+/* END OF IMAGE */
 
-/* List */
-
+/* LIST */
 	ol {
 		list-style: decimal;
 		margin: 0 0 2rem 0;
@@ -845,7 +900,7 @@ input, select, textarea {
 			margin-left: 2rem;
 		}
 
-/* Actions */
+/* ACTIONS IN LIST */
 
 	ul.actions {
 		display: -moz-flex;
@@ -967,7 +1022,7 @@ input, select, textarea {
 
 		}
 
-/* Icons */
+/* ICONS IN LIST */
 
 	ul.icons {
 		cursor: default;
@@ -1001,8 +1056,9 @@ input, select, textarea {
 				ul.icons li a:active {
 					background-color: rgba(255, 255, 255, 0.175);
 				}
+/* END OF LIST */
 
-/* Table */
+/* TABLE */
 
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
@@ -1070,7 +1126,7 @@ input, select, textarea {
 				border-top: 0;
 			}
 
-/* Button */
+/* Button IN TABLE */
 
 	input[type="submit"],
 	input[type="reset"],
@@ -1177,9 +1233,9 @@ input, select, textarea {
 	button {
 		line-height: calc(2.75rem - 2px);
 	}
+/* END OF TABLE */
 
 /* BACKGROUND */
-
 	#bg {
 		-moz-transform: scale(1.0);
 		-webkit-transform: scale(1.0);
@@ -1214,12 +1270,9 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto,
- 256px 256px;
-			background-position: center,
- center;
-			background-repeat: no-repeat,
- repeat;
+			background-size: auto, 256px 256px;
+			background-position: center, center;
+			background-repeat: no-repeat, repeat;
 			z-index: 2;
 		}
 
@@ -1239,59 +1292,6 @@ input, select, textarea {
 			z-index: 1;
 		}
 
-		/* BG ENDS HERE */
-
-		/* INDEX BACKGROUND */
-
-			#indexbg {
-				-moz-transform: scale(1.0);
-				-webkit-transform: scale(1.0);
-				-ms-transform: scale(1.0);
-				transform: scale(1.0);
-				-webkit-backface-visibility: hidden;
-				position: fixed;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100vh;
-				/* z-index: 1; */
-			}
-
-				#indexbg:before, #indexbg:after {
-					content: '';
-					display: block;
-					position: absolute;
-					top: 0;
-					left: 0;
-					width: 100%;
-					height: 100%;
-				}
-
-				/* #bg:before {
-					background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-					background-size: auto,
- 256px 256px;
-					background-position: center,
- center;
-					background-repeat: no-repeat,
- repeat;
-					z-index: 2;
-				} */
-
-				#indexbg:after {
-					-moz-transform: scale(1.125);
-					-webkit-transform: scale(1.125);
-					-ms-transform: scale(1.125);
-					transform: scale(1.125);
-					background-image: url("../../images/DakarOxy.png");
-					background-position: center;
-					/* background-size: cover; */
-					background-repeat: no-repeat;
-					/* z-index: 1; */
-				}
-
-				/* INDEX BG ENDS HERE */
-
 		body.is-article-visible #bg:after {
 			-moz-transform: scale(1.0825);
 			-webkit-transform: scale(1.0825);
@@ -1307,7 +1307,131 @@ input, select, textarea {
 			background-color: #000000;
 		}
 
-/* Wrapper */
+/* BG ENDS HERE */
+
+/* INDEX BACKGROUND */
+
+			#indexbg {
+				-moz-transform: scale(1.0);
+				-webkit-transform: scale(1.0);
+				-ms-transform: scale(1.0);
+				transform: scale(1.0);
+				-webkit-backface-visibility: hidden;
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100vh;
+				z-index: 1;
+			}
+
+				#indexbg:before, #indexbg:after {
+					content: '';
+					display: block;
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+				}
+
+				#indexbg:before {
+					background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
+					background-size: auto, 256px 256px;
+					background-position: center, center;
+					background-repeat: no-repeat, repeat;
+					z-index: 2;
+				}
+
+				#indexbg:after {
+					-moz-transform: scale(1.125);
+					-webkit-transform: scale(1.125);
+					-ms-transform: scale(1.125);
+					transform: scale(1.125);
+					background-image: url("../../images/bg.jpg");
+					background-position: center;
+					background-size: cover;
+					background-repeat: no-repeat;
+					z-index: 1;
+				}
+
+				body.is-article-visible #indexbg:after {
+					-moz-transform: scale(1.0825);
+					-webkit-transform: scale(1.0825);
+					-ms-transform: scale(1.0825);
+					transform: scale(1.0825);
+					-moz-filter: blur(0.2rem);
+					-webkit-filter: blur(0.2rem);
+					-ms-filter: blur(0.2rem);
+					filter: blur(0.2rem);
+				}
+
+				body.is-preload #indexbg:before {
+					background-color: #000000;
+				}
+
+/* INDEX BG ENDS HERE */
+
+/* TRANSITION FADE*/
+.fade-in {
+  display: inline-block;
+  animation: fadeIn linear 6.5s;
+  -webkit-animation: fadeIn linear 6.5s;
+  -moz-animation: fadeIn linear 6.5s;
+  -o-animation: fadeIn linear 6.5s;
+  -ms-animation: fadeIn linear 6.5s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+/* TRANSITION FADE BG STOPS HERE*/
+
+/* ANOTHER TRANSITION*/
+.animate-in {
+    -webkit-animation: fadeIn 2s ease-in;
+    animation: fadeIn 2s ease-in;
+}
+
+.animate-out {
+    -webkit-transition: opacity 2s;
+    transition: opacity 2s;
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+/* ENDS HERE*/
+
+/* WRAPPER */
 
 	#wrapper {
 		display: -moz-flex;
@@ -1361,6 +1485,7 @@ input, select, textarea {
 			}
 
 		}
+/* END OF WRAPPER */
 
 /* Header */
 
@@ -1377,10 +1502,10 @@ input, select, textarea {
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+		-moz-transition: -moz-transform 1.325s ease-in-out, -moz-filter 1.325s ease-in-out, opacity 1.325s ease-in-out;
+		-webkit-transition: -webkit-transform 1.325s ease-in-out, -webkit-filter 1.325s ease-in-out, opacity 1.325s ease-in-out;
+		-ms-transition: -ms-transform 1.325s ease-in-out, -ms-filter 1.325s ease-in-out, opacity 1.325s ease-in-out;
+		transition: transform 1.325s ease-in-out, filter 1.325s ease-in-out, opacity 1.325s ease-in-out;
 		background-image: -moz-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
 		background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
 		background-image: -ms-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
@@ -1390,10 +1515,10 @@ input, select, textarea {
 	}
 
 		#header > * {
-			-moz-transition: opacity 0.325s ease-in-out;
-			-webkit-transition: opacity 0.325s ease-in-out;
-			-ms-transition: opacity 0.325s ease-in-out;
-			transition: opacity 0.325s ease-in-out;
+			-moz-transition: opacity 1.325s ease-in-out;
+			-webkit-transition: opacity 1.325s ease-in-out;
+			-ms-transition: opacity 1.325s ease-in-out;
+			transition: opacity 1.325s ease-in-out;
 			position: relative;
 			margin-top: 3.5rem;
 		}
