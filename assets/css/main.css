@@ -186,15 +186,15 @@ input, select, textarea {
 	/*TO POSITION TEXT IN THE UPPER RIGHT CORNER*/
 	.upperrightcorner {
 	position: absolute;
-	left: 95%;
-	top: 5%;
+	left: 92.5%;
+	top: 4.5%;
 	transform: translate(-50%, -50%);
 	color: #ffffff;
 	font-family: "Source Sans Pro", sans-serif;
 	text-transform: uppercase;
 	color: #FFF9;
 	font-weight: 600;
-	font-size: 1.8rem;
+	font-size: 1.5rem;
 	letter-spacing: 0.5rem;
 	line-height: 1rem;
 	}
@@ -241,13 +241,6 @@ input, select, textarea {
 				color: #FFFFFF;
 		}
 /* END OF LINKS FOR INDEX */
-
-
-	.indextype {
-		font-size: 2rem;
-		color: #FFF9;
-		font-weight: 300;
-	}
 
 	.headertype1 {
 		font-size: 1.6rem;
@@ -303,8 +296,11 @@ input, select, textarea {
 			width: -ms-max-content;
 			width: max-content;
 			padding-top: 0.7rem;
-			/* LINE DELETED: padding-bottom: 0.5rem; */
+			padding-bottom: 0.2rem;
 			/* LINE DELETED: margin: 0 0 2rem 0; */
+			/* ADDED LINES */
+			margin: 0 auto 2rem;
+			/* Added lines end here */
 		}
 
 	h1 {
@@ -314,7 +310,7 @@ input, select, textarea {
 		/* ADDED LINES */
 		border-bottom: solid 1px #ffffff;
 		padding-bottom: 0.5rem;
-		margin: 0 0 2rem 0; /* Added lines end here */
+		/*margin: 0 0 2rem 0; */ /* Added lines end here */
 	}
 
 	h2 {
@@ -1285,7 +1281,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 1.325s ease-in-out, -webkit-filter 1.325s ease-in-out;
 			-ms-transition: -ms-transform 1.325s ease-in-out, -ms-filter 1.325s ease-in-out;
 			transition: transform 1.325s ease-in-out, filter 1.325s ease-in-out;
-			background-image: url("../../images/bgDKROXY.jpg");
+			background-image: url("../../images/bg.jpg");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1408,15 +1404,15 @@ input, select, textarea {
 }
 /* TRANSITION FADE BG STOPS HERE*/
 
-/* ANOTHER TRANSITION*/
+/* ANOTHER FADE-IN/FADE-OUT TRANSITION - FOR LOADING PAGES*/
 .animate-in {
-    -webkit-animation: fadeIn 2s ease-in;
-    animation: fadeIn 2s ease-in;
+    -webkit-animation: fadeIn 3.5s ease-in;
+    animation: fadeIn 3.5s ease-in;
 }
 
 .animate-out {
-    -webkit-transition: opacity 2s;
-    transition: opacity 2s;
+    -webkit-transition: opacity 3.5s;
+    transition: opacity 3.5s;
     opacity: 0;
 }
 
@@ -1432,7 +1428,6 @@ input, select, textarea {
 /* ENDS HERE*/
 
 /* WRAPPER */
-
 	#wrapper {
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -1890,7 +1885,8 @@ input, select, textarea {
 
 		#footer .copyright {
 			letter-spacing: 0.2rem;
-			font-size: 0.6rem;
+			font-size: 0.8rem;
+			font-weight: 300;
 			opacity: 0.75;
 			margin-bottom: 0;
 			text-transform: uppercase;
