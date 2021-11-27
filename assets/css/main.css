@@ -1300,7 +1300,7 @@ input, select, textarea {
 		}
 
 		body.is-preload #bg:before {
-			background-color: #000000;
+			background-color: #1b2022 /*#000000*/;
 		}
 
 /* BG ENDS HERE */
