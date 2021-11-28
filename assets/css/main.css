@@ -299,7 +299,7 @@ input, select, textarea {
 			padding-bottom: 0.2rem;
 			/* LINE DELETED: margin: 0 0 2rem 0; */
 			/* ADDED LINES */
-			margin: 0 auto 2rem;
+			margin: 0 auto 1rem;
 			/* Added lines end here */
 		}
 
