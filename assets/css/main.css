@@ -5,6 +5,11 @@
 	Dimension by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
+
+	T A B L E   O F   C O N T E N T S
+		Basics
+		Type
 */
 
 html, body, div, span, applet, object,
@@ -186,8 +191,8 @@ input, select, textarea {
 	/*TO POSITION TEXT IN THE UPPER RIGHT CORNER*/
 	.upperrightcorner {
 	position: absolute;
-	left: 92.5%;
-	top: 4.5%;
+	right: -15px;
+	top: 20px;
 	transform: translate(-50%, -50%);
 	color: #ffffff;
 	font-family: "Source Sans Pro", sans-serif;
@@ -224,7 +229,7 @@ input, select, textarea {
 			border-bottom-color: #FFF9;
 		}
 
-/* LINKS FOR INDEX */
+	/* LINKS FOR INDEX */
 		.index {
 			-moz-transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out, border-bottom-color 0.4s ease-in-out;
 			-webkit-transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out, border-bottom-color 0.4s ease-in-out;
@@ -240,7 +245,8 @@ input, select, textarea {
 			.index:hover {
 				color: #FFFFFF;
 		}
-/* END OF LINKS FOR INDEX */
+	/* END OF LINKS FOR INDEX */
+
 
 	.headertype1 {
 		font-size: 1.6rem;
@@ -896,7 +902,7 @@ input, select, textarea {
 			margin-left: 2rem;
 		}
 
-/* ACTIONS IN LIST */
+	/* ACTIONS IN LIST */
 
 	ul.actions {
 		display: -moz-flex;
@@ -1018,7 +1024,7 @@ input, select, textarea {
 
 		}
 
-/* ICONS IN LIST */
+	/* ICONS IN LIST */
 
 	ul.icons {
 		cursor: default;
@@ -1122,7 +1128,7 @@ input, select, textarea {
 				border-top: 0;
 			}
 
-/* Button IN TABLE */
+	/* Button IN TABLE */
 
 	input[type="submit"],
 	input[type="reset"],
@@ -1266,9 +1272,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
@@ -1909,13 +1918,31 @@ input, select, textarea {
 		}
 
 
+		/* DIVIDERS */
+
+			#anna {
+				margin-top: 2.5rem;
+				margin-bottom: 0;
+			}
+
+			#other-members-1 {
+				margin-top: .5rem;
+			}
+
+			#other-members-2 {
+				margin-top: 1rem;
+				margin-bottom: 1.5rem;
+			}
+
+		/* end of DIVIDERS */
+
 		/* ROW -- PART ADDED */
 
 			.row {
 				display: flex;
 				flex-wrap: wrap;
 				box-sizing: border-box;
-				align-items: stretch;
+				justify-content: space-evenly;
 			}
 
 				.row > * {
